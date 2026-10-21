@@ -1,0 +1,34 @@
+SSFM
+====
+
+SSFM stands for "Safe Simple Formatted Math".
+
+USAGE
+=====
+
+Percentage functions:
+  ssfm::perc(double part, double whole);
+  ssfm::perc_of(double perc, double value);
+
+Basic arithmetic functions:
+  ssfm::add(double a, double b);
+  ssfm::sub(double a, double b);
+  ssfm::div(double a, double b);
+  ssfm::multip(double a, double b);
+
+SETUP
+=====
+
+1. Download the latest libSSFM .tar.xz archive from the GitHub Releases page.
+2. Extract the archive. It contains header-source pairs for the available modules.
+3. Copy the required header and source files into your project.
+4. Include the appropriate headers in your C++ source files.
+5. Compile the required source files along with your project.
+
+ERROR HANDLING
+==============
+
+SSFM uses fallback return values instead of exceptions for handled errors.
+For example, division by zero logs an error and returns 0.0.
+
+Refer to each function's implementation for its specific behavior.
