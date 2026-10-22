@@ -16,6 +16,10 @@ Basic arithmetic functions:
   ssfm::div(double a, double b);
   ssfm::multip(double a, double b);
 
+propcheck functions:
+  ssfm::iseven(int num);
+  ssfm::isodd(int num);
+
 SETUP
 =====
 
