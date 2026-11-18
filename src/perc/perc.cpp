@@ -1,5 +1,5 @@
 #include  <iostream>
-#include "perc.hpp"
+#include "perc.h"
 
 double ssfm::perc(double part, double whole){
     double res;

@@ -1,4 +1,4 @@
-#include "propcheck.hpp"
+#include "propcheck.h"
 
 bool ssfm::iseven(int num){
 
