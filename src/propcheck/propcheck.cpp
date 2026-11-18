@@ -28,3 +28,26 @@ bool ssfm::isodd(int num){
     }
     return isodd;
 }
+bool ssfm::isprime(int num){
+
+    if(num <= 1){
+
+       return false;
+
+    }
+    if(num == 2){
+
+        return true;
+
+    }
+    for(int i = 2; i <= num / i; i++){
+
+        if(num % i == 0){
+
+            return false;
+
+        }
+
+    }
+    return true;
+}
