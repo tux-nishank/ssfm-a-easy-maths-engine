@@ -6,6 +6,7 @@
 - perc functions
 - basic4 functions
 - propcheck functions
+- vec2 prototype functions
 ### For detailed help kindly read `ssfm_help.txt`
 # warning:
 SSFM uses fallbacks(0) instead of exceptions, please code accordingly.

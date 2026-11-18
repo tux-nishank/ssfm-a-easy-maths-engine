@@ -19,12 +19,26 @@ Basic arithmetic functions:
 propcheck functions:
   ssfm::iseven(int num);
   ssfm::isodd(int num);
+  ssfm::isprime(int num);
+
+2D vector functions:
+  Object construction:
+    ssfm::vec2 yourvec{10.0f, 20.0f};
+
+  Non-mutating functions:
+    yourvec.add(5.0f, 8.0f);
+    yourvec.sub(2.0f, 3.0f);
+
+  These functions return a new vec2 object without modifying
+  the original vector.
 
 SETUP
 =====
 
-1. Download the latest libSSFM .tar.xz archive from the GitHub Releases page.
-2. Extract the archive. It contains header-source pairs for the available modules.
+1. Download the latest libSSFM .tar.xz archive from the GitHub
+   Releases page (or download the required files separately).
+2. Extract the archive. It contains header-source pairs for
+   the available modules.
 3. Copy the required header and source files into your project.
 4. Include the appropriate headers in your C++ source files.
 5. Compile the required source files along with your project.
@@ -32,7 +46,10 @@ SETUP
 ERROR HANDLING
 ==============
 
-SSFM uses fallback return values instead of exceptions for handled errors.
+SSFM uses fallback return values instead of exceptions for
+handled errors.
+
 For example, division by zero logs an error and returns 0.0.
 
-Refer to each function's implementation for its specific behavior.
+Refer to each function's implementation for its specific
+behavior.
